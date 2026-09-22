@@ -66,4 +66,15 @@ public class EconomyManager {
                 .limit(n)
                 .toList();
     }
+
+    public int rank(UUID id) {
+        double targetBalance = get(id);
+        int rank = 1;
+        for (double bal : balances.values()) {
+            if (bal > targetBalance) {
+                rank++;
+            }
+        }
+        return rank;
+    }
 }
