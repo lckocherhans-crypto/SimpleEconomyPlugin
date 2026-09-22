@@ -145,7 +145,7 @@ public class PriceManager {
         defaults.put(Material.PRISMARINE_SHARD, 3.0);
         defaults.put(Material.PRISMARINE_CRYSTALS, 4.0);
         defaults.put(Material.NAUTILUS_SHELL, 30.0);
-        defaults.put(Material.SCUTE, 15.0);
+        defaults.put(Material.TURTLE_SCUTE, 15.0);
         defaults.put(Material.PHANTOM_MEMBRANE, 15.0);
         base.putAll(defaults);
     }
