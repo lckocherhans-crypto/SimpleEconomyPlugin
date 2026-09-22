@@ -1,0 +1,25 @@
+name: SimpleEconomyPlugin
+version: 1.0.0
+main: com.example.simpleeconomy.SimpleEconomyPlugin
+api-version: '26.2'
+description: Simple economy with a player shop and fixed-price /sell.
+prefix: Simple Economy Plugin
+softdepend: [PlaceholderAPI]
+commands:
+  balance:
+    aliases: [bal, money]
+    description: Check your balance
+  pay:
+    description: Pay another player
+  baltop:
+    description: Richest players
+  eco:
+    description: Admin economy commands
+    permission: simpleeconomy.admin
+  shop:
+    description: Player shop - buy and sell custom listings
+  sell:
+    description: Sell items for their fixed base price
+permissions:
+  simpleeconomy.admin:
+    default: op

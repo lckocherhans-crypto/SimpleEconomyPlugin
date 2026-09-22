@@ -1,0 +1,25 @@
+# Balance new players start with
+starting-balance: 1000
+
+shop:
+  max-listings: 10    # number of shop lots per player (max 27)
+  min-price: 0.01
+  # Items that can't be listed on the shop (admin-only / not normally obtainable)
+  blocked-items:
+    - BARRIER
+    - COMMAND_BLOCK
+    - CHAIN_COMMAND_BLOCK
+    - REPEATING_COMMAND_BLOCK
+    - COMMAND_BLOCK_MINECART
+    - STRUCTURE_BLOCK
+    - STRUCTURE_VOID
+    - JIGSAW
+    - LIGHT
+    - DEBUG_STICK
+    - KNOWLEDGE_BOOK
+    - SPAWNER
+
+sell:
+  # Global multiplier applied on top of every item's base price in prices.yml.
+  # Tune this to adjust the whole economy without editing every item.
+  multiplier: 1.0
